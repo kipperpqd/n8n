@@ -1,0 +1,9 @@
+# Use a imagem oficial do n8n pronta no Docker Hub
+FROM n8nio/n8n:latest
+
+# Configure as variáveis principais
+ENV N8N_HOST=0.0.0.0
+ENV N8N_PORT=5678
+EXPOSE 5678
+
+CMD ["n8n", "start"]
